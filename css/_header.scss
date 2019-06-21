@@ -1,0 +1,105 @@
+@import './variables';
+
+header{
+    margin:0px;
+    padding:0px;
+    background:$dark;
+    color: white;
+    z-index:-1;
+  
+}
+.titleCard{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fadein 2s;
+    font-size:1.7em;
+    border-bottom: 2px solid black;
+    h1{
+        margin: 50px 0px 30px 0px;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+}
+
+@keyframes fadein{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+//Nav bar only opens up in screens bigger than 500px width
+.navBar{
+    display:none;
+}
+
+//Hamburger Menu
+.hamburger{
+    padding:5px;
+    padding-right: 5px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    cursor:pointer;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 5px;
+    background-color:rgb(231, 206, 206);
+    margin: 6px 0;
+    
+}
+
+#hamburgerMenu {
+ z-index:1;
+ border:1px solid black;
+ padding: 15px 15px;
+ clear: right;
+ display:flex;
+ flex-direction: column;
+ align-items: flex-end;
+ background:$light;
+ display:none;
+ 
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#FFF;
+    &:visited{
+        color:#FFF;
+        cursor: pointer
+        
+    }
+    &:hover{
+        color:teal;
+    }
+}
+
+@media (min-width: 500px){
+    header{
+        
+        .titleCard{
+            font-size: 1.9em;
+        }
+        .hamburger {
+            display:none;
+        }
+        .navBar{
+            display:flex;
+            justify-content: space-around;
+            background-color:$light;
+            font-size: 1.2em;
+            border-bottom: 1px solid black;
+        }
+        a{
+            &:hover{
+            color:teal;
+        }
+        
+    }    
+}
+}

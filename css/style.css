@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+header {
+  margin: 0px;
+  padding: 0px;
+  background: #007984;
+  color: white;
+  z-index: -1;
+}
+
+.titleCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadein 2s;
+  font-size: 1.7em;
+  border-bottom: 2px solid black;
+}
+
+.titleCard h1 {
+  margin: 50px 0px 30px 0px;
+}
+
+.titleCard h2 {
+  margin-bottom: 50px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navBar {
+  display: none;
+}
+
+.hamburger {
+  padding: 5px;
+  padding-right: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background-color: #e7cece;
+  margin: 6px 0;
+}
+
+#hamburgerMenu {
+  z-index: 1;
+  border: 1px solid black;
+  padding: 15px 15px;
+  clear: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: #63D7E2;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+}
+
+a:visited {
+  color: #FFF;
+  cursor: pointer;
+}
+
+a:hover {
+  color: teal;
+}
+
+@media (min-width: 500px) {
+  header .titleCard {
+    font-size: 1.9em;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: #63D7E2;
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+  }
+  header a:hover {
+    color: teal;
+  }
+}
+
+.main {
+  border-top: 2px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 1.5em;
+  border-bottom: 5px solid black;
+  display: border-box;
+  padding-bottom: 100px;
+  overflow: auto;
+  min-height: 100%;
+  background-color: #FFF;
+}
+
+.main h1 {
+  margin-top: 50px;
+}
+
+.main p {
+  margin: 5px;
+  font-size: .9em;
+}
+
+.main span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1, h2, p {
+  -webkit-animation: fadein 5s;
+  margin-bottom: 10px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pSet {
+  -webkit-animation: fadein 5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gitIcon {
+  display: none;
+}
+
+.portfolio {
+  margin: 20px 0px;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+  border: 3px #007984 groove;
+}
+
+.project1, .project2, .project3, .project4 {
+  background: url("../image/Discord-Logo-Color.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+  display: block;
+}
+
+.project1 a, .project2 a, .project3 a, .project4 a {
+  color: #007984;
+  text-decoration: none;
+}
+
+.project2 {
+  background: url("../image/weather.PNG");
+  background-size: 100% 100%;
+}
+
+.project3 {
+  background: url("../image/todo.PNG");
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+
+.project4 {
+  background: url("../image/colorgen2.PNG");
+  background-size: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #fff;
+}
+
+.portfolio:hover .overlay {
+  font-size: .8em;
+  padding: 5px;
+  opacity: .9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buttonGenerator {
+  width: 250px;
+  font-size: 1.2em;
+}
+
+@media (min-width: 500px) {
+  .pSet {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .portfolio {
+    margin: 30px;
+    padding: 150px;
+  }
+  .buttonGenerator {
+    width: 400px;
+  }
+  .gitIcon {
+    display: inline;
+  }
+}
+
+@media (min-width: 699px) {
+  .portfolio {
+    margin: 20px;
+    padding: 140px;
+  }
+}
+
+footer {
+  background: #63D7E2;
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  border-top: 2px solid black;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section {
+  background-Color: #63D7E2;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  text-align: center;
+}
+
+button {
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 10px;
+  border: 4px solid black;
+}
+
+.buttonSet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainWeather {
+  border-top: 2px solid black;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f96a3), to(#303e8f));
+  background: linear-gradient(#2f96a3, #303e8f);
+  color: white;
+}
+
+.location,
+.temperature-section {
+  height: 30vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temperature-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.degree-section {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

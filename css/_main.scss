@@ -1,0 +1,149 @@
+.main{
+    border-top: 2px black solid;
+    display:flex;
+    flex-direction:column;
+    align-items: center; 
+    padding: 10px;
+    font-size:1.5em;
+    border-bottom: 5px solid black;
+    display:border-box;
+    padding-bottom:100px;
+    overflow:auto;
+    min-height:100%;
+    background-color: $lightest;
+    h1{
+        margin-top: 50px;
+    }
+    p{
+        margin:5px;
+        font-size: .9em;
+    }
+    span{
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+}
+
+
+h1, h2, p{  
+    -webkit-animation: fadein 5s;
+    margin-bottom: 10px;
+}
+
+.description{
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.pSet{
+    -webkit-animation: fadein 5s;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.gitIcon{
+    display:none;
+}
+
+
+.portfolio{
+    margin: 20px 0px;
+    padding:100px;
+    position: relative;
+    width: 100%; 
+    border: 3px $dark groove;
+}
+
+.project1,.project2,.project3,.project4{
+    background: url('../image/Discord-Logo-Color.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto; 
+    display:block;
+    a{
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.project2{
+    background:url('../image/weather.PNG');
+    background-size: 100% 100%;
+}
+
+.project3{
+    background:url('../image/todo.PNG');
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+.project4{
+    background:url('../image/colorgen2.PNG');
+    background-size: 100% 100%;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition: .5s ease;
+    background-color:#fff;
+}
+
+.portfolio:hover .overlay{
+    font-size: .8em;
+    padding: 5px;
+    opacity:.9;
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonGenerator{
+    width: 250px;
+    font-size: 1.2em;
+}
+
+@media (min-width: 500px){
+    .pSet{
+        flex-direction: row;
+    }
+    .portfolio{
+        margin: 30px;
+        padding: 150px;
+    }
+    .buttonGenerator{
+        width:400px;
+    }
+    .gitIcon{
+        display:inline;
+    }
+}
+
+@media (min-width: 699px){
+    .portfolio{
+        margin: 20px;
+        padding: 140px;
+    }
+    
+}
